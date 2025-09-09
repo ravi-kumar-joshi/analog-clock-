@@ -1,0 +1,194 @@
+html {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+h1 {
+    color: rgb(237, 241, 19);
+    text-shadow: 2px 2px 3px #ea6666;
+}
+
+.clock {
+    width: 45rem;
+    height: 45rem;
+
+    border: 25px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+        0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.hour-hand {
+    width: 1.8%;
+    height: 20%;
+    background: black;
+    top: 30%;
+    opacity: 0.8;
+}
+
+.min-hand {
+    width: 1.6%;
+    height: 30%;
+    background: rgb(44, 27, 27);
+    top: 20%;
+    opacity: 0.8;
+}
+
+.second-hand {
+    width: 1%;
+    height: 35%;
+    background: rgb(233, 65, 65);
+    top: 15%;
+    opacity: 0.8;
+}
+
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #1b0202;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.number {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0c0000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.number.n12 {
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number.n1 {
+    top: 7.5%;
+    right: 25%;
+}
+
+.number.n2 {
+    top: 25%;
+    right: 7.5%;
+}
+
+.number.n3 {
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+.number.n4 {
+    bottom: 25%;
+    right: 7.5%;
+}
+
+.number.n5 {
+    bottom: 7.5%;
+    right: 25%;
+}
+
+.number.n6 {
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number.n7 {
+    bottom: 7.5%;
+    left: 25%;
+}
+
+.number.n8 {
+    bottom: 25%;
+    left: 7.5%;
+}
+
+.number.n9 {
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+.number.n10 {
+    top: 25%;
+    left: 7.5%;
+}
+
+.number.n11 {
+    top: 7.5%;
+    left: 25%;
+}
+
+
+
+@media (max-width :600px) {
+    .container {
+        gap: 10vw;
+        padding: 2vw;
+
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .clock {
+        width: 33rem;
+        height: 33rem;
+        border: 20px solid white;
+        margin-bottom: 12rem;
+    }
+
+}
