@@ -1,40 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IST Analog Clock</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <title>Analog Clock</title>
 
-<body>
-  
-  <div class="container">
-    <h1>Analog Clock</h1>
-    <div class="clock">
-      <div class="clock-face">
-        <div class="number n12">12</div>
-        <div class="number n1">1</div>
-        <div class="number n2">2</div>
-        <div class="number n3">3</div>
-        <div class="number n4">4</div>
-        <div class="number n5">5</div>
-        <div class="number n6">6</div>
-        <div class="number n7">7</div>
-        <div class="number n8">8</div>
-        <div class="number n9">9</div>
-        <div class="number n10">10</div>
-        <div class="number n11">11</div>
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-        <div class="center-dot"></div>
-      </div>
-    </div>
-  </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <script src="script.js"></script>
-</body>
+  <body>
+    <!-- Decorative Background -->
+    <div class="decor-circle circle-one"></div>
+    <div class="decor-circle circle-two"></div>
+    <div class="decor-circle circle-three"></div>
+    <div class="dots dots-left"></div>
+    <div class="dots dots-right"></div>
+    <div class="dots dots-bottom"></div>
 
+    <!-- ================= MAIN ================= -->
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Analog Clock</h1>
+        <p>
+          A simple and elegant analog clock built with HTML, CSS &amp;
+          JavaScript.
+        </p>
+      </section>
+
+      <!-- ================= CLOCK ================= -->
+      <section class="clock-section">
+        <div class="clock">
+          <div class="clock-face">
+            <!-- Clock Numbers -->
+            <div class="number n12">12</div>
+            <div class="number n1">1</div>
+            <div class="number n2">2</div>
+            <div class="number n3">3</div>
+            <div class="number n4">4</div>
+            <div class="number n5">5</div>
+            <div class="number n6">6</div>
+            <div class="number n7">7</div>
+            <div class="number n8">8</div>
+            <div class="number n9">9</div>
+            <div class="number n10">10</div>
+            <div class="number n11">11</div>
+
+            <!-- Clock Hands -->
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="center-dot"></div>
+          </div>
+        </div>
+
+        <!-- Digital Time -->
+        <div class="digital-time">
+          <div class="digital-icon">◷</div>
+          <span id="digital-clock"> 00:00:00 AM </span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
